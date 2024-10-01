@@ -18,9 +18,14 @@
     "sourceMap": true,
     /* If your code doesn't run in the DOM: */
     "lib": ["es2022"],
+    /* Decorator */
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    /* Path Alias */
     "baseUrl": ".",
     "paths": {
       "@controllers/*": ["src/app/controllers/*"],
+      "@validateSchema/*": ["src/app/validateSchema/*"],
       "@events/*": ["src/app/events/*"],
       "@middleware/*": ["src/app/middleware/*"],
       "@repositories/*": ["src/app/repositories/*"],

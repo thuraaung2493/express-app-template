@@ -47,8 +47,9 @@ pnpm run dev
 
 - [x] Routes
 - [x] ORM (Prisma)
+- [x] Validation (zod)
 - [x] Authentication (Passport JWT)
 - [x] File upload (Multer)
 - [x] Logging
 - [x] Web Socket (Socket.io)
-- [ ] API Response
+- [x] API Response

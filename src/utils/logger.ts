@@ -6,7 +6,7 @@ const { combine, timestamp, printf, simple } = format;
 const { Console, DailyRotateFile } = transports;
 
 const Logger = createLogger({
-  level: 'info',
+  level: 'debug',
   format: combine(
     timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
     printf(({ level, message, timestamp, ...meta }) => {

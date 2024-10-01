@@ -7,17 +7,3 @@ namespace NodeJS {
     SALT_ROUNDS: string;
   }
 }
-
-namespace Express {
-  interface User {
-    id: number;
-    email: string;
-    name: string;
-    password: string;
-    createdAt: Date;
-    updatedAt: Date;
-  }
-  interface Request {
-    user?: User;
-  }
-}

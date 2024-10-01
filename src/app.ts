@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url';
 
 import { PORT } from '@config/app.js';
 import { HTTP_FORMAT } from '@config/log.js';
+import apiResponse from '@middleware/responses/apiResponse.js';
 import Logger from '@utils/logger.js';
 import Ws from './ws.js';
 
@@ -66,6 +67,7 @@ class App {
     this.app.use(cors());
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: true }));
+    this.app.use(apiResponse);
   }
 
   private routes() {
