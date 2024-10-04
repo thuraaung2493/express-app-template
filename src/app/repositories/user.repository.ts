@@ -26,12 +26,12 @@ class UserRepository {
     }
   }
 
-  async first(where: { name?: string; email?: string }) {
+  async first(where: Prisma.UserWhereInput) {
     return this.user.findFirst({ where });
   }
 
-  async all({ withoutId }: { withoutId: number }) {
-    return this.user.findMany({ where: { NOT: { id: withoutId } } });
+  async all(args: Prisma.UserFindManyArgs) {
+    return this.user.findMany(args);
   }
 }
 

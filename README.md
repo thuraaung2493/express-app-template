@@ -12,15 +12,15 @@ cd express-app-template
 pnpm install
 ```
 
-**OR uses `create-express-app` CLI tool**
+**OR uses `ts-expressor` CLI tool**
 
 ```
 // Globally install
-npm i -g create-express-app
-create-express-app <app-name>
+npm i -g ts-expressor
+ts-expressor new <app-name>
 
 //or
-npx create-express-app <app-name>
+npx ts-expressor new <app-name>
 ```
 
 ## Runing App
@@ -53,3 +53,12 @@ pnpm run dev
 - [x] Logging
 - [x] Web Socket (Socket.io)
 - [x] API Response
+
+[0]: https://thuraaung2493.github.io/
+[1]: https://github.com/thuraaung2493/express-app-template/issues
+
+#### Author: [thuraaung2493][0]
+
+#### Issues: [Open issues][1]
+
+#### License: ISC
